@@ -49,6 +49,24 @@ codeImg.setAttribute('src', siteContent['cta']['img-src']);
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
+const navElement = document.querySelector('nav');
+
+const newNav = document.createElement('a');
+const newNav2 = document.createElement('a');
+const text = document.createTextNode("Join Us");
+const text2 = document.createTextNode("Gallery");
+newNav.appendChild(text);
+newNav2.appendChild(text2);
+navElement.appendChild(newNav2);
+navElement.appendChild(newNav);
+
+
+// const newNav2 = document.createElement('a');
+// const text2 = document.createTextNode("Gallery");
+// newNav2.prepend(text2);
+// navElement.prepend(newNav2);
+
+
 let navi = document.getElementsByTagName('a');
 navi[0].textContent = siteContent["nav"]["nav-item-1"];
 navi[1].textContent = siteContent["nav"]["nav-item-2"];
@@ -56,6 +74,7 @@ navi[2].textContent = siteContent["nav"]["nav-item-3"];
 navi[3].textContent = siteContent["nav"]["nav-item-4"];
 navi[4].textContent = siteContent["nav"]["nav-item-5"];
 navi[5].textContent = siteContent["nav"]["nav-item-6"];
+
 for (let i = 0; i < navi.length; i++){
   navi[i].style.color = "green";
 }
@@ -94,5 +113,6 @@ contactUsParagraph[2].textContent = siteContent["contact"]["email"];
 
 let footerP = document.querySelector('footer p');
 footerP.textContent = siteContent["footer"]["copyright"];
+
 
 
