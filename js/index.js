@@ -56,6 +56,9 @@ navi[2].textContent = siteContent["nav"]["nav-item-3"];
 navi[3].textContent = siteContent["nav"]["nav-item-4"];
 navi[4].textContent = siteContent["nav"]["nav-item-5"];
 navi[5].textContent = siteContent["nav"]["nav-item-6"];
+for (let i = 0; i < navi.length; i++){
+  navi[i].style.color = "green";
+}
 
 let domIs = document.querySelector('.cta-text h1');
 domIs.textContent = siteContent["cta"]["h1"];
